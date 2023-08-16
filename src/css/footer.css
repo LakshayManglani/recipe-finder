@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 5.6rem;
+  border-top: 0.2rem solid var(--accentColor);
+}
+
+.footer_-ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer_-ul li {
+  list-style: none;
+}
+
+.footer_-ul li a {
+  text-decoration: none;
+  font-size: var(--fontSmall);
+}
+
+.footer_-copyright a {
+  text-decoration: none;
+  border-bottom: 0.1rem solid var(--accentColor);
+}
+
+/*--------------------------------*\
+    => Adjust footer with different Screen Sizes
+\*--------------------------------*/
+
+@media (min-width: 590px) {
+  .footer {
+    height: 8rem;
+  }
+
+  .footer_-ul li a {
+    font-size: var(--fontLarge);
+  }
+
+  .footer_-copyright {
+    font-size: var(--fontLarge);
+  }
+}

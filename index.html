@@ -8,24 +8,70 @@
     <!-- 
         => Logo
     -->
-    <link rel="icon" href="/src/images/logo/f-logo.png" type="image/png" />
+    <link rel="icon" href="/src/images/logo/leaf.png" type="image/png" />
 
     <!-- 
-        => CSS Links
+      => CSS Links
     -->
-    <link rel="stylesheet" href="/src/css/header.css" type="" />
-    <link rel="stylesheet" href="/src/css/style.css" type="" />
+    <link rel="stylesheet" href="/src/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/src/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="/src/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/src/css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="/src/css/main.css" type="text/css" />
   </head>
   <body>
     <header class="header header--banner">
-      <img
-        src="/src/images/logo/food-circle-logo.png"
-        alt="food-logo"
-        class="img header--logo" />
-      <p class="header__para">
-        from breakfast to dinner, Recipe Finder provides a range of dishes that
-        turn your kitchen into a haven of paradise.
+      <p class="header_-para">
+        From breakfast to dinner, <strong>recipe finder</strong> provides a
+        range of dishes that turn your kitchen into a
+        <em>haven of paradise</em>.
       </p>
     </header>
+
+    <nav class="nav">
+      <div class="nav_-brand">
+        <img
+          class="nav_-logo"
+          src="/src/images/logo/food.png"
+          alt="food-logo" />Recipe Finder
+      </div>
+
+      <div class="search_-container">
+        <div class="search_-input_-container">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search"
+            class="search_-input" />
+        </div>
+        <div class="search_-button_-container">
+          <button type="submit" class="search_-button">
+            <img
+              src="/src/images/icons/search.svg"
+              alt="search icon"
+              class="search_-icon" />
+          </button>
+        </div>
+      </div>
+
+      <ul class="nav_-ul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main class="main"></main>
+
+    <footer class="footer">
+      <ul class="footer_-ul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <p class="footer_-copyright">
+        This work is licensed under the
+        <a href="/LICENSE" target="_blank">MIT License</a>.
+      </p>
+    </footer>
   </body>
 </html>
