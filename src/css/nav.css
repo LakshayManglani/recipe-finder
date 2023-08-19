@@ -1,11 +1,19 @@
 .nav {
   width: 100%;
-  height: 6.5rem;
+  height: 9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   border-bottom: 0.2rem solid var(--accentColor);
-  padding: 0 1rem;
+  padding: 0.7rem 2rem;
+}
+
+.brandAndSearch_-Container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav_-brand {
@@ -28,9 +36,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25rem;
+  width: 19rem;
   margin: 0 0.5rem;
-  height: 2.3rem;
+  height: 3rem;
 }
 
 .search_-input_-container {
@@ -46,11 +54,11 @@
 }
 
 .search_-input {
-  margin-left: 1.5rem;
+  margin: 0 1rem 0 1.5rem;
   width: 95%;
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--accentColor);
   height: 100%;
   font-size: var(--fontSmall);
 }
@@ -85,11 +93,14 @@
     => Navigation Links Container
 \*--------------------------------*/
 .nav_-ul {
+  border: 0.2rem solid var(--secondaryColor);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 0 1rem;
+  border-bottom: none;
   display: flex;
   align-items: start;
   justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
 .nav_-ul li {
@@ -104,7 +115,25 @@
 /*--------------------------------*\
     => Adjust nav with different Screen Sizes
 \*--------------------------------*/
-@media (min-width: 590px) {
+@media (min-width: 654px) {
+  .search_-container {
+    height: 4rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 954px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7rem;
+  }
+
+  .brandSearch_-Container {
+    flex: 1;
+    justify-content: start;
+  }
+
   .nav_-brand {
     flex-direction: row;
     gap: 1rem;
@@ -115,12 +144,14 @@
     width: 4rem;
   }
 
-  .search_-input_-container {
-    border-radius: 3rem 0 0 3rem;
-  }
-
   .search_-container {
     height: 4rem;
+    margin: auto;
+    width: 40rem;
+  }
+
+  .search_-input_-container {
+    border-radius: 3rem 0 0 3rem;
   }
 
   .search_-input {
@@ -143,11 +174,5 @@
 
   .nav_-ul li a {
     font-size: var(--fontLarge);
-  }
-}
-
-@media (min-width: 954px) {
-  .search_-container {
-    width: 40rem;
   }
 }

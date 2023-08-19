@@ -8,7 +8,7 @@
     <!-- 
         => Logo
     -->
-    <link rel="icon" href="/src/images/logo/leaf.png" type="image/png" />
+    <link rel="icon" href="/src/images/logo/leaf-16x16.png" type="image/png" />
 
     <!-- 
       => CSS Links
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/src/css/nav.css" type="text/css" />
     <link rel="stylesheet" href="/src/css/footer.css" type="text/css" />
     <link rel="stylesheet" href="/src/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="/src/css/card.css" type="text/css" />
   </head>
   <body>
     <header class="header header--banner">
@@ -29,49 +30,59 @@
     </header>
 
     <nav class="nav">
-      <div class="nav_-brand">
-        <img
-          class="nav_-logo"
-          src="/src/images/logo/food.png"
-          alt="food-logo" />Recipe Finder
-      </div>
+      <div class="brandAndSearch_-Container">
+        <a href="#" class="nav_-brand">
+          <img
+            class="nav_-logo"
+            src="/src/images/logo/food-40x40.png"
+            alt="food-logo" />Recipe Finder
+        </a>
 
-      <div class="search_-container">
-        <div class="search_-input_-container">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search"
-            class="search_-input" />
-        </div>
-        <div class="search_-button_-container">
-          <button type="submit" class="search_-button">
-            <img
-              src="/src/images/icons/search.svg"
-              alt="search icon"
-              class="search_-icon" />
-          </button>
+        <div class="search_-container">
+          <div class="search_-input_-container">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+              class="search_-input" />
+          </div>
+
+          <div class="search_-button_-container">
+            <button type="submit" class="search_-button" id="buttonSubmit">
+              <img
+                src="/src/images/icons/search.svg"
+                alt="search icon"
+                class="search_-icon" />
+            </button>
+          </div>
         </div>
       </div>
 
       <ul class="nav_-ul">
         <li><a href="#">Home</a></li>
+
         <li><a href="#">About Us</a></li>
       </ul>
     </nav>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="recipes_-container" id="recipes_-container"></div>
+    </main>
 
     <footer class="footer">
       <ul class="footer_-ul">
         <li><a href="#">Home</a></li>
+
         <li><a href="#">About Us</a></li>
       </ul>
+
       <p class="footer_-copyright">
         This work is licensed under the
         <a href="/LICENSE" target="_blank">MIT License</a>.
       </p>
     </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
