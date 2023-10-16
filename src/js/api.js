@@ -28,7 +28,7 @@ export function fetchAPI(ingredient) {
         }
         catch (error) {
             console.log(`${error}`);
-            throw error;
+            return null;
         }
     });
 }

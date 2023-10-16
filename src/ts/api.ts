@@ -20,6 +20,6 @@ export async function fetchAPI(ingredient: string) {
     return data;
   } catch (error) {
     console.log(`${error}`);
-    throw error;
+    return null;
   }
 }
