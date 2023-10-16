@@ -10,7 +10,7 @@
 
 .header--banner {
   background-color: transparent;
-  background-image: url(/src/images/header/banner-425.png);
+  background-image: url(../images/header/banner-425.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -30,7 +30,7 @@
   }
 
   .header--banner {
-    background-image: url(/src/images/header/banner-768.png);
+    background-image: url(../images/header/banner-768.png);
   }
 
   .header_-para {
@@ -40,12 +40,12 @@
 
 @media (min-width: 954px) {
   .header--banner {
-    background-image: url(/src/images/header/banner-1140.png);
+    background-image: url(../images/header/banner-1140.png);
   }
 }
 
 @media (min-width: 1613px) {
   .header--banner {
-    background-image: url(/src/images/header/banner-2560.png);
+    background-image: url(../images/header/banner-2560.png);
   }
 }

@@ -6,6 +6,10 @@ Welcome to Recipe Finder! This web application allows you to search for various 
 
 Check out the live demo of Recipe Finder on Netlify: [Recipe Finder Live Demo](https://recipefinderbylakshay.netlify.app/)
 
+## Backend Repository
+
+Check out the backend repository for this project on Github: [Recipe Finder Backend](https://github.com/LakshayManglani/recipe-finder-backend)
+
 ## Features
 
 - Search for Recipes: Use the search bar to find recipes based on ingredients, dish names, or other keywords.
@@ -21,8 +25,9 @@ Check out the live demo of Recipe Finder on Netlify: [Recipe Finder Live Demo](h
 ## Technologies Used
 
 - HTML5 and CSS3 for creating the user interface.
-- TypeScript for handling dynamic functionality.
-- Fetch API to retrieve recipe data from a JSON file.
+- TypeScript for for type safety.
+- Jest for testing.
+- Fetch API to get recipe data from a custom API.
 - Flexbox for responsive layout and design.
 
 ## Contributions

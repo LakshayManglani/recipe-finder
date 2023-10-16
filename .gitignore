@@ -1,6 +1,7 @@
 # Folders to ignore
 node_modules/
 notes/
+coverage/
 
 # Files to ignore
 package-lock.json

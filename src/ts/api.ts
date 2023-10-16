@@ -3,17 +3,10 @@ export async function fetchAPI(ingredient: string) {
   // const url = '../../notes/response.json';
 
   // * API Settings
-  const url = `https://low-carb-recipes.p.rapidapi.com/search?name=${ingredient}`;
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'c854b6e902msh3a5a404a2c7fe1ep103aa1jsn8e727021425b',
-      'X-RapidAPI-Host': 'low-carb-recipes.p.rapidapi.com',
-    },
-  };
+  const url = `https://recipe-finder-backend-production.up.railway.app/api?name=${ingredient}`;
 
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(url);
 
     if (!response.ok) {
       if (response.status === 404) {

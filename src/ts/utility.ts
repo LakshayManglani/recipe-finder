@@ -4,8 +4,8 @@ export const utilityFunction = {
     T extends keyof HTMLElementTagNameMap,
   >(
     tagName: T,
-    properties: Partial<HTMLElementTagNameMap[T]>,
-  ): HTMLElementTagNameMap[T] {
+    properties: Partial<HTMLElementTagNameMap[T]> = {},
+  ): HTMLElement {
     const element = document.createElement(tagName);
     Object.assign(element, properties);
     return element;
@@ -13,5 +13,6 @@ export const utilityFunction = {
 
   appendChildren(parent: HTMLElement, children: HTMLElement[]) {
     children.forEach(child => parent.appendChild(child));
+    return parent;
   },
 };
